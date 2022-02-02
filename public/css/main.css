@@ -1,0 +1,448 @@
+@import url(/css/font.css);
+@import url(/font-awesome/css/font-awesome.min.css);
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+    background-image: url(/image/bg.jpg);
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	background-size: cover !important;
+}
+
+body {
+	font: 15px/30px "montserrat-regular", sans-serif;
+	font-weight: normal;
+	color: #575859;
+}
+
+a,
+a:visited {
+	outline: none;
+	color: #fbca08;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+	color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "montserrat-bold", sans-serif;
+	color: #575859;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin: 18px 0 15px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-weight: inherit;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 36px;
+	margin-top: 0;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h6 {
+	font-size: 13px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p {
+	margin: 15px 0 15px 0;
+}
+
+p img {
+	margin: 0;
+}
+
+p.lead {
+	font: 17px/33px "montserrat-regular", sans-serif;
+	color: #707273;
+}
+
+em {
+	font: 15px/30px "montserrat-regular", sans-serif;
+	font-style: normal;
+}
+
+strong,
+b {
+	font: 15px/30px "montserrat-bold", sans-serif;
+	font-weight: normal;
+}
+
+hr {
+	border: solid #fbca08;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 23px 0 12px;
+	height: 0;
+}
+
+
+ul,
+ol {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 17px;
+}
+
+dl {
+	margin: 0 0 15px 0;
+}
+
+dt {
+	margin: 0;
+	color: #fbca08;
+}
+
+dd {
+	margin: 0 0 0 20px;
+}
+
+
+img.pull-right {
+	margin: 12px 0px 0px 18px;
+}
+
+img.pull-left {
+	margin: 12px 18px 0px 0px;
+}
+
+@-webkit-keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+
+}
+
+@keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+
+}
+
+#content-wrap {
+	min-height: 100%;
+	padding-top: 6%;
+}
+
+@media only screen and (max-width:900px) {
+	#content-wrap {
+		padding-top: 9%;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	#content-wrap {
+		padding-top: 13%;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#content-wrap {
+		min-height: auto;
+		padding-top: 60px;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+	#content-wrap {
+		padding-top: 54px;
+	}
+
+}
+
+main.row {
+	max-width: 700px;
+}
+
+main {
+	text-align: center;
+}
+
+main::after {
+	content: "";
+	display: block;
+	height: 150px;
+}
+
+main h1 {
+	font: 38px/1.2em "montserrat-bold", sans-serif;
+	color: #fbca08;
+	margin-bottom: 12px;
+	padding: 0;
+}
+
+main p {
+	font: 17px/36px "montserrat-regular", sans-serif;
+	color: #fff;
+	margin-bottom: 18px;
+	padding: 0;
+}
+
+main hr {
+	border: solid #fbca08;
+	border-width: 5px 0 0;
+	margin: 19px auto 12px;
+	height: 0;
+	width: 100px;
+}
+
+main .site-header .logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 36px 0;
+	padding: 0;
+}
+
+main .site-header .logo a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	width: 116px;
+	height: 80px;
+	background: url("../images/logo/logo@2x.png") no-repeat;
+	background-size: contain;
+}
+
+@media only screen and (max-width:900px) {
+	main.row {
+		width: 85%;
+	}
+
+	main h1 {
+		font: 35px/1.2em "montserrat-bold", sans-serif;
+	}
+
+	main p {
+		font: 16px/30px "montserrat-regular", sans-serif;
+	}
+
+	main .site-header .logo {
+		margin: 0 0 30px 0;
+	}
+
+	main .site-header .logo a {
+		width: 104px;
+		height: 72px;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	main.row {
+		width: 92%;
+	}
+
+	main h1 {
+		font: 32px/1.2em "montserrat-bold", sans-serif;
+	}
+
+	main p {
+		font: 15px/30px "montserrat-regular", sans-serif;
+	}
+
+	main .site-header .logo {
+		margin: 0 0 24px 0;
+	}
+
+}
+
+@media only screen and (max-width:500px) {
+	main.row {
+		width: 96%;
+	}
+
+	main h1 {
+		font: 30px/1.2em "montserrat-bold", sans-serif;
+	}
+
+	main p {
+		line-height: 27px;
+	}
+
+	main::after {
+		height: 78px;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+	main.row {
+		width: 100%;
+	}
+
+	main h1 {
+		font: 28px/1.2em "montserrat-bold", sans-serif;
+	}
+
+	main p {
+		font: 14px/27px "montserrat-regular", sans-serif;
+	}
+
+	main .site-header .logo a {
+		width: 95px;
+		height: 66px;
+	}
+
+}
+
+#counter {
+	width: 90%;
+	color: white;
+	text-align: center;
+	margin: 18px auto 0;
+}
+
+#counter span {
+	font: 62px/1em "montserrat-bold", sans-serif;
+	display: block;
+	padding: 12px 0 30px;
+	min-width: 25%;
+	float: left;
+}
+
+#counter span em {
+	font: 11px/18px "montserrat-regular", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 3px;
+	display: block;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width:900px) {
+	#counter {
+		width: 92%;
+	}
+
+	#counter span {
+		font: 58px/1em "montserrat-bold", sans-serif;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	#counter {
+		width: 100%;
+	}
+
+	#counter span {
+		font: 52px/1em "montserrat-bold", sans-serif;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#counter {
+		margin-bottom: 24px;
+	}
+
+	#counter span {
+		font: 48px/1em "montserrat-bold", sans-serif;
+	}
+
+}
+
+@media only screen and (max-width:500px) {
+	#counter {
+		margin-bottom: 12px;
+	}
+
+	#counter span {
+		font: 37px/1em "montserrat-bold", sans-serif;
+	}
+
+	#counter span em {
+		font: 9px/18px "montserrat-regular", sans-serif;
+		letter-spacing: 1.5px;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+	#counter span {
+		font: 31px/1em "montserrat-bold", sans-serif;
+	}
+
+	#counter span em {
+		font: 8px/18px "montserrat-regular", sans-serif;
+		letter-spacing: 1px;
+	}
+
+}
